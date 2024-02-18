@@ -403,6 +403,7 @@ body {
       @include mq(md) {
         font-size: rem(16);
         letter-spacing: .1rem;
+        padding: 1.5rem 0;
       }
     }
 
@@ -414,6 +415,7 @@ body {
 
       @include mq(md) {
         gap: 0;
+        padding-bottom: 1.5rem;
       }
     }
 
@@ -434,6 +436,7 @@ body {
 
       & a {
         display: inline-block;
+        font-size: rem(14);
         border: 1px solid $color-bk;
         position: relative;
         background: $color-wh;
@@ -546,6 +549,7 @@ body {
       @include mq(md) {
         font-size: rem(16);
         letter-spacing: .1rem;
+        padding: 1.5rem 0;
       }
     }
 
@@ -557,6 +561,7 @@ body {
 
       @include mq(md) {
         gap: 0;
+        padding-bottom: 1.5rem;
       }
     }
 
@@ -577,6 +582,7 @@ body {
 
       & a {
         display: inline-block;
+        font-size: rem(14);
         border: 1px solid $color-bk;
         position: relative;
         background: $color-wh;

@@ -330,6 +330,7 @@ body .sp-only {
   .portfolio__group01--title {
     font-size: 1rem;
     letter-spacing: 0.1rem;
+    padding: 1.5rem 0;
   }
 }
 .portfolio__group01--data {
@@ -341,6 +342,7 @@ body .sp-only {
 @media screen and (max-width: 768px) {
   .portfolio__group01--data {
     gap: 0;
+    padding-bottom: 1.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -358,6 +360,7 @@ body .sp-only {
 }
 .portfolio__group01--attention a {
   display: inline-block;
+  font-size: 0.875rem;
   border: 1px solid #23171B;
   position: relative;
   background: #fff;
@@ -452,6 +455,7 @@ body .sp-only {
   .portfolio__group02--title {
     font-size: 1rem;
     letter-spacing: 0.1rem;
+    padding: 1.5rem 0;
   }
 }
 .portfolio__group02--data {
@@ -463,6 +467,7 @@ body .sp-only {
 @media screen and (max-width: 768px) {
   .portfolio__group02--data {
     gap: 0;
+    padding-bottom: 1.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -480,6 +485,7 @@ body .sp-only {
 }
 .portfolio__group02--attention a {
   display: inline-block;
+  font-size: 0.875rem;
   border: 1px solid #23171B;
   position: relative;
   background: #fff;
