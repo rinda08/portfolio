@@ -211,11 +211,11 @@ body {
   // 画像切り替え ------------------------------
   @keyframes img_anime {
     0% {
-    background-image: url(../img/hero01.jpg);
+    background-image: url(../img/dummy01.png);
     // 背景画像1を指定
     }
     20% {
-    background-image: url(../img/hero01.jpg);
+    background-image: url(../img/dummy01.png);
     // 背景画像1を指定
     }
     35% {
@@ -235,7 +235,7 @@ body {
     // 背景画像3を指定
     }
     100% {
-    background-image: url(../img/hero01.jpg);
+    background-image: url(../img/dummy01.png);
     // 背景画像1を指定
     }
   }
@@ -414,6 +414,7 @@ body {
     }
 
     &--attention {
+      text-align: center;
       padding-bottom: 2rem;
 
       & a {
@@ -421,9 +422,9 @@ body {
         border: 1px solid $color-bk;
         position: relative;
         background: $color-wh;
-        color:$color-bk;
-        border:2px solid $color-bk;
-        padding:1rem 5rem 1rem 2rem;
+        color: $color-bk;
+        border: 2px solid $color-bk;
+        padding: 1rem 5rem 1rem 2rem;
         transition: all .3s;
       
         &:after{
@@ -540,6 +541,7 @@ body {
     }
 
     &--attention {
+      text-align: center;
       padding-bottom: 2rem;
 
       & a {
@@ -547,9 +549,10 @@ body {
         border: 1px solid $color-bk;
         position: relative;
         background: $color-wh;
-        color:$color-bk;
-        border:2px solid $color-bk;
-        padding:1rem 5rem 1rem 2rem;
+        color: $color-bk;
+        border: 2px solid $color-bk;
+        // padding: 1rem 5rem 1rem 2rem;
+        padding: 1rem 5rem 1rem 2rem;
         transition: all .3s;
       
         &:after{

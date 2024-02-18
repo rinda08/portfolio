@@ -163,10 +163,10 @@ body .sp-only {
 }
 @keyframes img_anime {
   0% {
-    background-image: url(../img/hero01.jpg);
+    background-image: url(../img/dummy01.png);
   }
   20% {
-    background-image: url(../img/hero01.jpg);
+    background-image: url(../img/dummy01.png);
   }
   35% {
     background-image: url(../img/dummy02.png);
@@ -181,7 +181,7 @@ body .sp-only {
     background-image: url(../img/dummy03.png);
   }
   100% {
-    background-image: url(../img/hero01.jpg);
+    background-image: url(../img/dummy01.png);
   }
 }
 
@@ -337,6 +337,7 @@ body .sp-only {
   padding-bottom: 2.5rem;
 }
 .portfolio__group01--attention {
+  text-align: center;
   padding-bottom: 2rem;
 }
 .portfolio__group01--attention a {
@@ -442,6 +443,7 @@ body .sp-only {
   padding-bottom: 2.5rem;
 }
 .portfolio__group02--attention {
+  text-align: center;
   padding-bottom: 2rem;
 }
 .portfolio__group02--attention a {
