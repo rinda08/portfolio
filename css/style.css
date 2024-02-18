@@ -340,8 +340,12 @@ body .sp-only {
 }
 @media screen and (max-width: 768px) {
   .portfolio__group01--data {
-    font-size: 0.75rem;
     gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio__group01--dataTxt {
+    font-size: 0.75rem;
   }
 }
 .portfolio__group01--disc {
@@ -458,8 +462,12 @@ body .sp-only {
 }
 @media screen and (max-width: 768px) {
   .portfolio__group02--data {
-    font-size: 0.75rem;
     gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio__group02--dataTxt {
+    font-size: 0.75rem;
   }
 }
 .portfolio__group02--disc {
