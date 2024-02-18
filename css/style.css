@@ -326,6 +326,11 @@ body .sp-only {
   letter-spacing: 0.6rem;
   padding: 2.5rem 0;
 }
+@media screen and (max-width: 768px) {
+  .portfolio__group01--title {
+    font-size: 1rem;
+  }
+}
 .portfolio__group01--data {
   display: flex;
   flex-direction: column;
@@ -431,6 +436,11 @@ body .sp-only {
   font-weight: 400;
   letter-spacing: 0.6rem;
   padding: 2.5rem 0;
+}
+@media screen and (max-width: 768px) {
+  .portfolio__group02--title {
+    font-size: 1rem;
+  }
 }
 .portfolio__group02--data {
   display: flex;
