@@ -25,7 +25,8 @@ $breakpoints: (
 // colors ------------------------
 $color-bk: #23171B;
 $color-wh: #fff;
-$color-sub: #B58D6D;
+// $color-sub: #B58D6D;
+$color-sub: #ccc;
 $color-bg: #fffffe;
 
 
@@ -77,7 +78,11 @@ body {
   }
 
 // section間の余白 ------------------------------
-  section {
+  section:first-of-type {
+    margin-top: 11.5rem;
+  }
+
+  section:last-of-type {
     margin-top: 12.5rem;
   }
 
@@ -838,6 +843,7 @@ body {
     &:has(:checked) p {
       display: block;
       padding-top: 5rem;
+      margin-bottom: -8rem;
       line-height: 2;
     }
 

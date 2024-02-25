@@ -42,7 +42,10 @@ body .container {
     padding: 0;
   }
 }
-body section {
+body section:first-of-type {
+  margin-top: 11.5rem;
+}
+body section:last-of-type {
   margin-top: 12.5rem;
 }
 body .sec-title {
@@ -61,7 +64,7 @@ body .sec-title {
 }
 body .sec-title::before {
   content: "";
-  border-top: 1px solid #B58D6D;
+  border-top: 1px solid #ccc;
   width: 2.5rem;
   margin-right: 1.5rem;
 }
@@ -641,7 +644,7 @@ body .sp-only {
 .aboutme__img::before {
   content: "";
   position: absolute;
-  border: 1px solid #B58D6D;
+  border: 1px solid #ccc;
   top: 16px;
   left: 16px;
   width: 100%;
@@ -699,6 +702,7 @@ body .sp-only {
 .aboutme__nextTxt:has(:checked) p {
   display: block;
   padding-top: 5rem;
+  margin-bottom: -8rem;
   line-height: 2;
 }
 .aboutme__nextTxt p::after {
