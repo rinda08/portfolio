@@ -50,9 +50,9 @@ body {
   p {
     font-size: rem(16);
 
-    @include mq(md) {
-      font-size: rem(14);
-    }
+      @include mq(md) {
+        font-size: rem(14);
+      }
   }
 
   a {
@@ -96,9 +96,9 @@ body {
     padding-bottom: 5rem;
     font-weight: 300;
 
-    @include mq(sm) {
-      font-size: 6.4vw;
-    }
+      @include mq(sm) {
+        font-size: 6.4vw;
+      }
 
     &::before {
       content: '';
@@ -106,10 +106,10 @@ body {
       width: 2.5rem;
       margin-right: 1.5rem;
 
-      @include mq(md) {
-        width: 1.5rem;
-        margin-right: .5rem;
-      }
+        @include mq(md) {
+          width: 1.5rem;
+          margin-right: .5rem;
+        }
     }
   }
 
@@ -177,12 +177,15 @@ body {
 ---------------------------------------------------------- */
 .hero {
   position: relative;
-  min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
   background-color: $color-bg;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+    @include mq(sm) {
+      height: 464px;
+    }
 
   &__title {
     font-family: 'Raleway', sans-serif;
@@ -194,23 +197,23 @@ body {
     text-shadow: 1px 1px 2px $color-bk;
     letter-spacing: .8rem;
     line-height: .8;
+    
+      @include mq(sm) {
+        font-size: 12.8vw;
+      }
+
+      @include mq(sm) {
+        top: calc(100vh - 44vh);
+      }
 
     &--small {
       font-size: rem(48);
       font-weight: 400;
       letter-spacing: .5rem;
 
-      @include mq(sm) {
-        font-size: 8vw;
-      }
-    }
-
-    @include mq(sm) {
-      font-size: 12.8vw;
-    }
-
-    @include mq(sm) {
-      top: calc(100vh - 44vh);
+        @include mq(sm) {
+          font-size: 8vw;
+        }
     }
   }
 } // ← hero end
@@ -225,9 +228,9 @@ body {
   bottom: 200px;
   margin: 0 0 0 auto;
 
-  @include mq(md) {
-    bottom: 120px;
-  }
+    @include mq(md) {
+      bottom: 120px;
+    }
 
   &::after {
     content : '';
@@ -241,10 +244,10 @@ body {
     height : 168px;
     animation: scroll 3s infinite;
 
-    @include mq(md) {
-      height : 88px;
-      bottom : -96px;
-    }
+      @include mq(md) {
+        height : 88px;
+        bottom : -96px;
+      }
   }
 
   &__font {
@@ -300,18 +303,18 @@ body {
     justify-content: center;
     gap: 2.4vh;
 
-    @include mq(md) {
-      flex-wrap: wrap;
-    }
+      @include mq(md) {
+        flex-wrap: wrap;
+      }
   }
 
   // group01 ------------------------------
   &__group01 {
     max-width: 272px;
 
-    @include mq(md) {
-      width: 40.54vw;
-    }
+      @include mq(md) {
+        width: 40.54vw;
+      }
 
     &:hover {
       cursor: pointer;
@@ -374,11 +377,11 @@ body {
       letter-spacing: .6rem;
       padding: 2.5rem 0;
 
-      @include mq(md) {
-        font-size: rem(16);
-        letter-spacing: .1rem;
-        padding: 1.5rem 0;
-      }
+        @include mq(md) {
+          font-size: rem(16);
+          letter-spacing: .1rem;
+          padding: 1.5rem 0;
+        }
     }
 
     &--data {
@@ -387,16 +390,16 @@ body {
       gap: 1rem;
       padding-bottom: 2.5rem;
 
-      @include mq(md) {
-        gap: 0;
-        padding-bottom: 1.5rem;
-      }
+        @include mq(md) {
+          gap: 0;
+          padding-bottom: 1.5rem;
+        }
     }
 
     &--dataTxt {
-      @include mq(md) {
-        font-size: rem(12);
-      }
+        @include mq(md) {
+          font-size: rem(12);
+        }
     }
 
     &--disc {
@@ -455,9 +458,9 @@ body {
   &__group02 {
     max-width: 272px;
 
-    @include mq(md) {
-      width: 40.54vw;
-    }
+      @include mq(md) {
+        width: 40.54vw;
+      }
 
     &:hover {
       cursor: pointer;
@@ -520,11 +523,11 @@ body {
       letter-spacing: .6rem;
       padding: 2.5rem 0;
 
-      @include mq(md) {
-        font-size: rem(16);
-        letter-spacing: .1rem;
-        padding: 1.5rem 0;
-      }
+        @include mq(md) {
+          font-size: rem(16);
+          letter-spacing: .1rem;
+          padding: 1.5rem 0;
+        }
     }
 
     &--data {
@@ -533,16 +536,16 @@ body {
       gap: 1rem;
       padding-bottom: 2.5rem;
 
-      @include mq(md) {
-        gap: 0;
-        padding-bottom: 1.5rem;
-      }
+        @include mq(md) {
+          gap: 0;
+          padding-bottom: 1.5rem;
+        }
     }
 
     &--dataTxt {
-      @include mq(md) {
-        font-size: rem(12);
-      }
+        @include mq(md) {
+          font-size: rem(12);
+        }
     }
 
     &--disc {
@@ -616,28 +619,28 @@ body {
     align-items: flex-start;
     gap: 3rem;
 
-    @include mq(md) {
-      flex-direction: column;
-      align-items: center;
-    }
+      @include mq(md) {
+        flex-direction: column;
+        align-items: center;
+      }
   }
 
   &__txtCnt {
     width: 48%;
 
-    @include mq(md) {
-      width: 100%;
-    }
+      @include mq(md) {
+        width: 100%;
+      }
 
     &--title {
       font-size: rem(20);
       padding-bottom: 1.5rem;
       letter-spacing: .6rem;
 
-      @include mq(sm) {
-        font-size: 4.8vw;
-        letter-spacing: .4rem;
-      }
+        @include mq(sm) {
+          font-size: 4.8vw;
+          letter-spacing: .4rem;
+        }
     }
 
     &--mainTxt {
@@ -688,10 +691,10 @@ body {
         transition: all .5s ease;
         width: 160px;
 
-        @include mq(sm) {
-          top: -30px;
-          width: 136px;
-        }
+          @include mq(sm) {
+            top: -30px;
+            width: 136px;
+          }
       }
 
       // Tooltip arrow //
@@ -718,9 +721,9 @@ body {
         pointer-events: none;
         text-align: center;
 
-        @include mq(sm) {
-          font-size: rem(10);
-        }
+          @include mq(sm) {
+            font-size: rem(10);
+          }
       }
 
       // Triggering the transition //
@@ -738,9 +741,9 @@ body {
     width: 48%;
     position: relative;
 
-    @include mq(md) {
-      width: 100%;
-    }
+      @include mq(md) {
+        width: 100%;
+      }
 
     &::before {
       content: "";
@@ -752,10 +755,10 @@ body {
       height: 100%;
       z-index: 1;
 
-      @include mq(md) {
-        top: 8px;
-        left: 8px;
-      }
+        @include mq(md) {
+          top: 8px;
+          left: 8px;
+        }
     }
   }
 

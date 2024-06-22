@@ -1,13 +1,3 @@
-// ●○●○●○ 画面サイズが変わるたびvh取得 ●○●○●○ //
-function setHeight() {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-setHeight();
-//ブラウザのサイズが変更された時・画面の向きを変えた時にvh再計算
-window.addEventListener('resize', setHeight);
-
-
 // ●○●○●○ hero(bgswitcher.js) ●○●○●○ //
 jQuery(function($) {
     $('.hero').bgSwitcher({
