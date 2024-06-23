@@ -125,7 +125,8 @@ body .sp-only {
 
 /* hero
 ---------------------------------------------------------- */
-.hero {
+.hero-pc {
+  display: block;
   position: relative;
   height: 100vh;
   background-color: #fafafa;
@@ -133,12 +134,12 @@ body .sp-only {
   background-size: cover;
   background-position: center center;
 }
-@media screen and (max-width: 500px) {
-  .hero {
-    height: 464px;
+@media screen and (max-width: 768px) {
+  .hero-pc {
+    display: none;
   }
 }
-.hero__title {
+.hero-pc__title {
   font-family: "Raleway", sans-serif;
   color: #fff;
   position: absolute;
@@ -150,22 +151,60 @@ body .sp-only {
   line-height: 0.8;
 }
 @media screen and (max-width: 500px) {
-  .hero__title {
+  .hero-pc__title {
     font-size: 12.8vw;
-  }
-}
-@media screen and (max-width: 500px) {
-  .hero__title {
     top: 56vh;
   }
 }
-.hero__title--small {
+.hero-pc__title--small {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
 }
 @media screen and (max-width: 500px) {
-  .hero__title--small {
+  .hero-pc__title--small {
+    font-size: 8vw;
+  }
+}
+
+.hero-sp {
+  display: none;
+  position: relative;
+  height: 100vh;
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (max-width: 768px) {
+  .hero-sp {
+    display: block;
+  }
+}
+.hero-sp__title {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 48vh;
+  font-size: 5rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #23171B;
+  letter-spacing: 0.8rem;
+  line-height: 0.8;
+}
+@media screen and (max-width: 500px) {
+  .hero-sp__title {
+    font-size: 12.8vw;
+    top: 56vh;
+  }
+}
+.hero-sp__title--small {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+@media screen and (max-width: 500px) {
+  .hero-sp__title--small {
     font-size: 8vw;
   }
 }

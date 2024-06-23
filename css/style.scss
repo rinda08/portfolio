@@ -175,7 +175,8 @@ body {
 
 /* hero
 ---------------------------------------------------------- */
-.hero {
+.hero-pc {
+  display: block;
   position: relative;
   height: 100vh;
   background-color: $color-bg;
@@ -183,8 +184,49 @@ body {
   background-size: cover;
   background-position: center center;
 
-    @include mq(sm) {
-      height: 464px;
+  @include mq(md) {
+    display: none;
+  }
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    color: $color-wh;
+    position: absolute;
+    top: calc(100vh - 52vh);
+    font-size: rem(80);
+    font-weight: 500;
+    text-shadow: 1px 1px 2px $color-bk;
+    letter-spacing: .8rem;
+    line-height: .8;
+    
+      @include mq(sm) {
+        font-size: 12.8vw;
+        top: calc(100vh - 44vh);
+      }
+
+    &--small {
+      font-size: rem(48);
+      font-weight: 400;
+      letter-spacing: .5rem;
+
+        @include mq(sm) {
+          font-size: 8vw;
+        }
+    }
+  }
+} // ← hero-pc end
+
+.hero-sp {
+  display: none;
+  position: relative;
+  height: 100vh;
+  background-color: $color-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+    @include mq(md) {
+      display: block;
     }
 
   &__title {
@@ -200,9 +242,6 @@ body {
     
       @include mq(sm) {
         font-size: 12.8vw;
-      }
-
-      @include mq(sm) {
         top: calc(100vh - 44vh);
       }
 
@@ -216,7 +255,7 @@ body {
         }
     }
   }
-} // ← hero end
+} // ← hero-sp end
 
 
 /* scroll
