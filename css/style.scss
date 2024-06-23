@@ -781,7 +781,7 @@ body {
     position: relative;
 
       @include mq(md) {
-        width: 100%;
+        width: 64%;
       }
 
     &::before {

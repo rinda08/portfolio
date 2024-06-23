@@ -659,7 +659,7 @@ body .sp-only {
 }
 @media screen and (max-width: 768px) {
   .aboutme__img {
-    width: 100%;
+    width: 64%;
   }
 }
 .aboutme__img::before {
