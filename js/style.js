@@ -1,10 +1,12 @@
 // ●○●○●○ hero(bgswitcher.js) ●○●○●○ //
+// pc
 jQuery(function($) {
     $('.hero-pc').bgSwitcher({
         images: ['img/hero_img01.jpg','img/hero_img02.jpg','img/hero_img03.jpg'], // 切り替える背景画像を指定
     });
 });
 
+// sp
 jQuery(function($) {
   $('.hero-sp').bgSwitcher({
       images: ['img/hero_img01-sp.jpg','img/hero_img02-sp.jpg','img/hero_img03-sp.jpg'], // 切り替える背景画像を指定
